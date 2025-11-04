@@ -39,42 +39,22 @@ const Home = () => {
     <>
       <MainLayout>
         {/* MAIN */}
-        <section className="bg-[#F1F3F5] px-5 py-20">
-          <div className="max-w-[1500px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="w-full lg:w-[630px]">
-              <h1 className="text-[50px] lg:text-[70px] leading-[70px] lg:leading-[90px] text-black font-[berlin-sans-fb-demi]">
-                A Dignified Path To <br />
-                <span className="text-[#BD8928]">Nikāḥ Al-Mut‘ah</span>
-              </h1>
-              <p className="font-[poppins-regular] text-[18px] leading-9 text-black pt-4 pb-7">
-                With <b>Niyyah</b> (Intention), <b>Adab</b> (Etiquette), And
-                Consent, Halal Nights Helps You Understand, Recite, And Record
-                a Temporary Marriage In A Manner That Honours Faith And Privacy.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center gap-[25px]">
-                <Link
-                  to="#"
-                  className="bg-[#BD8928] text-white capitalize flex items-center gap-[9px] font-[poppins-medium] text-[18px] leading-7 px-[30px] py-[15px] border border-[#BD8928] rounded-[10px]"
-                >
-                  Begin The Contract
-                  <img src="./images/arrow-ic.svg" alt="arrow" />
-                </Link>
-                <Link
-                  to="#"
-                  className="bg-transparent text-[#BD8928] capitalize flex items-center gap-[9px] font-[poppins-medium] text-[18px] leading-7 px-[30px] py-[15px] border border-[#BD8928] rounded-[10px]"
-                >
-                  Learn About Mut’ah
-                  <img src="./images/arrow-gold.svg" alt="arrow" />
-                </Link>
-              </div>
-            </div>
 
-            <div className="w-full lg:w-[634px]">
-              <img
-                src="./images/banner_image.png"
-                alt="banner"
-                className="w-full h-auto"
-              />
+
+        <section className="bg-[#F1F3F5] px-5 py-20">
+          <div className="max-w-[1500px] mx-auto">
+            <div className="flex-col-reverse flex items-center justify-between md:flex-row gap-5">
+              <div className="w-[770px] lg:w-[630px] max-w-full md:pb-8 p-0">
+                <h1 className="text-[40px] leading-[60px] lg:text-[50px] lg:leading-[70px] xl:text-[70px] xl:leading-[90px] text-black font-[berlin-sans-fb-demi]">A Dignified Path To <br /><span className="text-[#BD8928]">Nikāḥ Al-Mut‘ah</span></h1>
+                <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">With <b>Niyyah</b> (Intention), <b>Adab</b> (Etiquette), And Consent, Halal Nights Helps You Understand, Recite,  And Record a Temporary Marriage In A Manner That Honours Faith And  Privacy.</p>
+                <div className="mobile_banner_btn flex items-center gap-2.5 lg:gap-4">
+                  <a href="#" className="group transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Begin The Contract <img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></a>
+                  <a href="#" className="group transition-all duration-300 bg-transparent text-[#BD8928] capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-[#bd8928] hover:text-white">Learn About Mut’ah <img className="transition-all duration-300 group-hover:invert group-hover:brightness-0" src="./images/arrow-gold.svg" /></a>
+                </div>
+              </div>
+              <div className="w-[634px] max-w-full">
+                <img src="./images/banner_image.png" />
+              </div>
             </div>
           </div>
         </section>
