@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
 
   type MenuItem = {
@@ -9,7 +9,7 @@ const Header = () => {
 
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const location = useLocation(); // ✅ get current route
 
   // Simulated dynamic fetch (replace with your API or CMS call)
   useEffect(() => {
@@ -87,7 +87,8 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex lg:items-center gap-14">
-              {menuItems.map((item) => (
+              {/* {menuItems.map((item) => (
+
                 <Link
                   key={item.label}
                   to={item.link}
@@ -95,7 +96,26 @@ const Header = () => {
                 >
                   {item.label}
                 </Link>
-              ))}
+              ))} */}
+
+              {menuItems.map((item) => {
+                const isActive = location.pathname === item.link; // ✅ check active
+
+                return (
+                  <Link
+                    key={item.label}
+                    to={item.link}
+                    className={`font-[poppins-medium] text-[18px] leading-7 transition ${isActive
+                      ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" // ✅ active style
+                      : "text-black hover:text-[#BD8928]"
+                      }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+
+
             </div>
 
             {/* Desktop Button */}
@@ -144,6 +164,23 @@ const Header = () => {
                 </div>
 
                 <nav className="space-y-4">
+                  {/* {menuItems.map((item) => {
+              const isActive = location.pathname === item.link; // ✅ check active
+
+              return (
+                <Link
+                  key={item.label}
+                  to={item.link}
+                  className={`block text-lg font-semibold text-gray-900 hover:text-[#BD8928] ${
+                    isActive
+                      ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" // ✅ active style
+                      : "text-black hover:text-[#BD8928]"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })} */}
                   {menuItems.map((item) => (
                     <Link
                       key={item.label}
