@@ -1,0 +1,6 @@
+a, button {cursor: pointer;}
+@media(max-width: 430px){
+.mobile_banner_btn {flex-direction: column !important;}
+.mobile_banner_btn a {width: 100% !important;}
+
+}
