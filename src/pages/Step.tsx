@@ -3,7 +3,7 @@ import MainLayout from '../layouts/MainLayout'
 const Step = () => {
   return (
     <MainLayout>
-      <div className="flex flex-col items-center justify-center min-h-[60vh] bg-[#F9F4EC] text-center px-5">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] bg-[#F1F3F5] text-center px-5">
         <h1 className="text-[36px] md:text-[48px] font-[poppins-semibold] text-[#BD8928] mb-3">
           Coming Soon
         </h1>

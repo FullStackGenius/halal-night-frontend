@@ -10,7 +10,7 @@ interface ContactFormData {
   message: string;
 }
 
-export default function Example() {
+export default function ContactUs() {
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -25,7 +25,9 @@ export default function Example() {
 
   // ✅ Handle input changes
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+  >
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -75,7 +77,7 @@ export default function Example() {
 
   return (
     <MainLayout>
-    <section className="px-5 py-12 lg:py-24 bg-[#F9F4EC]">
+    <section className="px-5 py-12 lg:py-24 bg-[#F1F3F5]">
       <div className="max-w-[800px] mx-auto text-center">
         <h2 className="text-[34px] lg:text-[46px] font-[berlin-sans-fb-demi] text-black mb-3">
           Contact Us
@@ -110,7 +112,7 @@ export default function Example() {
             />
           </div>
 
-          <input
+          {/* <input
             type="text"
             name="reason"
             value={formData.reason}
@@ -118,7 +120,10 @@ export default function Example() {
             placeholder="Reason for Contact"
             required
             className="border border-[#BD8928] rounded-lg p-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#BD8928]"
-          />
+          /> */}
+          <select  name="reason"
+            value={formData.reason}
+            onChange={handleChange} className="border border-[#BD8928] rounded-lg p-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#BD8928]"><option value="General Inquiry">General Inquiry</option><option value="Contract Builder Help">Contract Builder Help</option><option value="Report A Bug">Report A Bug</option><option value="Partnership / Imam">Partnership / Imam</option><option value="Other">Other</option></select>
 
           <input
             type="text"
