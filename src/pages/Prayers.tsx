@@ -4,7 +4,7 @@ import MainLayout from '../layouts/MainLayout'
 const Prayers = () => {
   return (
     <MainLayout>
-     <section className="px-5 py-12 lg:py-24 bg-[#F1F3F5]">
+     <section className="px-5 py-12 lg:py-24 bg-white">
           <div className="max-w-[1500px] mx-auto">
             <div className="flex gap-5 justify-between items-center flex-col-reverse md:flex-row">
               <div className="w-[775px] lg:w-[615px] max-w-full">

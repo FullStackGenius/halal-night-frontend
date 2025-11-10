@@ -38,7 +38,7 @@ const Faq = () => {
       <section className="px-5 py-12 lg:py-24">
         <div className="max-w-[1500px] mx-auto">
           <div className="flex gap-5 justify-between items-start flex-col md:flex-row">
-            <div className="w-[615px] max-w-full">
+            <div className="w-full md:w-[615px] max-w-full">
               <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-10 uppercase flex items-center gap-2.5 pb-3 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">FAQ’S</h5>
               <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">Frequently Asked Question About Our Programs</h2>
               <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>

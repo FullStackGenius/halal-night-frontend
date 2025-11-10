@@ -86,7 +86,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex lg:items-center gap-14">
+            <div className="hidden gap-[25px] lg:flex lg:items-center xl:gap-14">
               {/* {menuItems.map((item) => (
 
                 <Link
@@ -105,7 +105,7 @@ const Header = () => {
                   <Link
                     key={item.label}
                     to={item.link}
-                    className={`font-[poppins-medium] text-[18px] leading-7 transition ${isActive
+                    className={`font-[poppins-medium] text-[16px] xl:text-[18px] leading-7 transition ${isActive
                       ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" // ✅ active style
                       : "text-black hover:text-[#BD8928]"
                       }`}

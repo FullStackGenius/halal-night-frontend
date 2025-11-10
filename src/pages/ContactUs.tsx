@@ -77,8 +77,8 @@ export default function ContactUs() {
 
   return (
     <MainLayout>
-    <section className="px-5 py-12 lg:py-24 bg-[#F1F3F5]">
-      <div className="max-w-[800px] mx-auto text-center">
+    <section className="px-5 py-12 lg:py-24 bg-white">
+      <div className="max-w-[800px] mx-auto text-center bg-[#F1F3F5] rounded-2xl shadow-md p-8">
         <h2 className="text-[34px] lg:text-[46px] font-[berlin-sans-fb-demi] text-black mb-3">
           Contact Us
         </h2>
@@ -89,7 +89,7 @@ export default function ContactUs() {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-5 bg-white p-8 rounded-2xl shadow-md"
+          className="flex flex-col gap-5 "
         >
           <div className="flex flex-col md:flex-row gap-5">
             <input
