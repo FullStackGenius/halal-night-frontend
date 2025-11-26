@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const faqs = [
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "What is Mut'ah (Temporary Marriage)?",
+      a: "Mut'ah is a temporary marriage contract permitted under certain Islamic schools, defining the agreed period and dowry between the two parties.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is this contract legally binding?",
+      a: "This digital form helps generate a written agreement. Its legal recognition depends on your country's laws and personal adherence.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Can I customize the terms of the contract?",
+      a: "Yes. You can include any additional terms in the 'Conditions / Notes' section before finalizing your contract.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is my data stored on the server?",
+      a: "No. All contract data is processed locally in your browser and not saved or shared with any third party.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Can I customize the terms of the contract?",
+      a: "Yes. You can include any additional terms in the 'Conditions / Notes' section before finalizing your contract.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is my data stored on the server?",
+      a: "No. All contract data is processed locally in your browser and not saved or shared with any third party.",
     }
 
   ];
@@ -66,7 +66,7 @@ const Home = () => {
                 <img className="w-full rounded-[20px]" src="./images/about-image.png" />
               </div>
               <div className="w-[762px] max-w-full">
-                <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-10 uppercase flex items-center gap-2.5 pb-2.5 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">About Us</h5>
+                <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-10 uppercase flex items-center gap-2.5 pb-2.5 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">About Nikah Al-Mutah</h5>
                 <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">Meaning, Origins, Conditions, and Acceptance</h2>
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7"><b>Nikāḥ Al‑Mut‘ah</b> literally means a time‑bound marriage contract. In Ja‘farī (<b>Twelver Shia</b>) jurisprudence, it is a lawful union formed with consent, a known dower (<b>Mahr</b>), and a defined duration, enacted through a clear formula of offer and acceptance.</p>
                 <div className="bg-[#FFF8EB] px-5 py-3 flex flex-col md:flex-row gap-[18px] rounded-[20px] mb-9">
