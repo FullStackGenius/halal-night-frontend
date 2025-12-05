@@ -121,11 +121,11 @@ const MutahMarriageForm: React.FC = () => {
             });
 
             const data = await res.json();
-
+            console.log(data)
             if (!res.ok) throw new Error("Submission failed");
 
-            alert("✔ Contract sent successfully!");
-            window.open(data.certificate, "_blank");
+           alert("✔ Contract sent successfully!");
+           window.open(data.data.certificate, "_blank");
 
         } catch (err) {
             alert("❌ Failed to send contract");
