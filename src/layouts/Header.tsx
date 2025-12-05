@@ -10,12 +10,12 @@ const Header = () => {
 
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // ✅ get current route
+  const location = useLocation(); 
 
-  // Simulated dynamic fetch (replace with your API or CMS call)
+ 
   useEffect(() => {
     const fetchMenu = async () => {
-      // Example: static mock data — replace this with API call
+     
       const data = [
         { label: "Home", link: "/" },
         { label: "About", link: "/about" },
@@ -38,7 +38,7 @@ const Header = () => {
         <div className="bg-[#03060E] py-[11px] px-5">
           <div className="max-w-[1500px] mx-auto flex justify-end">
             <div className="flex items-center gap-2.5">
-              <img src="./images/mail-icon.svg" alt="mail" />
+              <img src="/images/mail-icon.svg" alt="mail" />
               <Link
                 className="text-white font-[poppins-regular]"
                 to="mailto:contact@halalnights.com"
@@ -57,7 +57,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex w-[150px]">
               <Link to="/" className="-m-1.5 p-1.5">
-                <img src="./images/logo.svg" alt="logo" />
+                <img src="/images/logo.svg" alt="logo" />
               </Link>
             </div>
 
@@ -88,26 +88,15 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden gap-[25px] lg:flex lg:items-center xl:gap-14">
-              {/* {menuItems.map((item) => (
-
-                <Link
-                  key={item.label}
-                  to={item.link}
-                  className="font-[poppins-medium] text-[18px] leading-7 text-black hover:text-[#BD8928] transition"
-                >
-                  {item.label}
-                </Link>
-              ))} */}
-
               {menuItems.map((item) => {
-                const isActive = location.pathname === item.link; // ✅ check active
+                const isActive = location.pathname === item.link; 
 
                 return (
                   <Link
                     key={item.label}
                     to={item.link}
                     className={`font-[poppins-medium] text-[16px] xl:text-[18px] leading-7 transition ${isActive
-                      ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" // ✅ active style
+                      ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" 
                       : "text-black hover:text-[#BD8928]"
                       }`}
                   >
@@ -121,12 +110,6 @@ const Header = () => {
 
             {/* Desktop Button */}
             <div className="hidden w-[250px] lg:flex lg:justify-end">
-              {/* <Link
-                to="/contract"
-                className="bg-[#BD8928] text-white capitalize flex items-center gap-[9px] font-[poppins-medium] text-[18px] leading-7 px-[30px] py-[15px] rounded-[10px]"
-              >
-                Start Contract <img src="./images/arrow-ic.svg" alt="arrow" />
-              </Link> */}
                 <HoverButton label="Start Contract" redirectPath="/contract" />
             </div>
           </nav>
@@ -141,7 +124,7 @@ const Header = () => {
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
-                  <img src="./images/logo.svg" alt="logo" className="w-[70px] h-[70px] min-w-[70px]" />
+                  <img src="/images/logo.svg" alt="logo" className="w-[70px] h-[70px] min-w-[70px]" />
                   <button
                     type="button"
                     onClick={() => setMenuOpen(false)}
@@ -166,23 +149,6 @@ const Header = () => {
                 </div>
 
                 <nav className="space-y-4">
-                  {/* {menuItems.map((item) => {
-              const isActive = location.pathname === item.link; // ✅ check active
-
-              return (
-                <Link
-                  key={item.label}
-                  to={item.link}
-                  className={`block text-lg font-semibold text-gray-900 hover:text-[#BD8928] ${
-                    isActive
-                      ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" // ✅ active style
-                      : "text-black hover:text-[#BD8928]"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })} */}
                   {menuItems.map((item) => (
                     <Link
                       key={item.label}
@@ -196,12 +162,6 @@ const Header = () => {
                 </nav>
 
                 <div className="mt-6">
-                  {/* <Link
-                    to="/contract"
-                    className="block w-full text-center bg-[#BD8928] text-white py-3 rounded-lg font-[poppins-medium] text-lg"
-                  >
-                    Start Contract
-                  </Link> */}
                   <HoverButton label="Start Contract" redirectPath="/contract" />
                 </div>
               </div>
