@@ -329,7 +329,7 @@ const ContractForm = () => {
                                                 </div>
                                                 <div className="mb-[20px] md:mb-[28px] lg:mb-[32px]">
                                                     <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Additional Conditions (Optional)</label>
-                                                    <textarea className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[115px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]" placeholder="Enter Any Mutually Agreed Conditions (e.g., Housing, Rights, Support)"
+                                                    <textarea className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[115px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Any Mutually Agreed Conditions (e.g., Housing, Rights, Support)"
                                                         name="conditions"
                                                         onChange={handleInput}></textarea>
                                                 </div>
@@ -418,12 +418,12 @@ const ContractForm = () => {
                                                     <input type="text"
                                                         name="witness1Name"
                                                         onChange={handleInput}
-                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] mb-[20px] md:mb-[25px] lg:mb-[30px]" placeholder="Name Of Witness 1 (Optional)" />
+                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] mb-[20px] md:mb-[25px] lg:mb-[30px] focus:outline-none focus:ring-0" placeholder="Name Of Witness 1 (Optional)" />
                                                     {errors.witness1Name && <p className="text-red-600 text-sm">{errors.witness1Name}</p>}
                                                     <input type="text"
                                                         name="witness2Name"
                                                         onChange={handleInput}
-                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]" placeholder="Name Of Witness 2 (Optional)" />
+                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Name Of Witness 2 (Optional)" />
                                                     {errors.witness2Name && <p className="text-red-600 text-sm">{errors.witness2Name}</p>}
                                                 </div>
                                                 <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[16px] leading-[20px] sm:text-[16px] sm:leading-[20px] pt-3">
