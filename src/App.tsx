@@ -1,5 +1,5 @@
 import './App.css'
-// import About from './pages/About';
+import About from './pages/About';
 import Home from './pages/Home'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Step from './pages/Step';
@@ -11,6 +11,7 @@ import ContactUs from './pages/ContactUs';
 
 import Testingone from './pages/Testingone';
 import ComingSoon from './components/ComingSoon';
+import NewContract from './pages/NewContract';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/steps" element={<Step />} />
           <Route path="/prayers" element={<Prayers />} /> */}
@@ -25,6 +27,7 @@ function App() {
           <Route path="/steps" element={<ComingSoon />} />
           <Route path="/prayers" element={<ComingSoon />} />
           <Route path="/test-work" element={<Contract />} />
+           <Route path="/new-contract" element={<NewContract />} />
            {/* <Route path="/contract" element={<Home />} /> */}
              <Route path="/contract" element={<ComingSoon />} />
           {/* <Route path="/faq" element={<Faq />} /> */}

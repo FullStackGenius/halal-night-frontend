@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
-import { Link } from "react-router-dom";
+import HoverButton from "../components/HoverButton";
 
 const Home = () => {
   const faqs = [
@@ -48,7 +48,8 @@ const Home = () => {
                 <h1 className="text-[40px] leading-[60px] lg:text-[50px] lg:leading-[70px] xl:text-[70px] xl:leading-[90px] text-black font-[berlin-sans-fb-demi]">A Dignified Path To <br /><span className="text-[#BD8928]">Nikāḥ Al-Mut‘ah</span></h1>
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">With <b>Niyyah</b> (Intention), <b>Adab</b> (Etiquette), And Consent, Halal Nights Helps You Understand, Recite,  And Record a Temporary Marriage In A Manner That Honours Faith And  Privacy.</p>
                 <div className="mobile_banner_btn flex items-center gap-2.5 lg:gap-4">
-                  <a href="#" className="group transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Begin The Contract <img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></a>
+                  {/* <a href="#" className="group transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Begin The Contract <img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></a> */}
+                  <HoverButton label="Begin The Contract" redirectPath="/contract" />
                   <a href="#" className="group transition-all duration-300 bg-transparent text-[#BD8928] capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-[#bd8928] hover:text-white">Learn About Mut’ah <img className="transition-all duration-300 group-hover:invert group-hover:brightness-0" src="./images/arrow-gold.svg" /></a>
                 </div>
               </div>
@@ -78,7 +79,8 @@ const Home = () => {
                     <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-0.5">With Taqwā, Mut‘ah fosters dignity, honesty, responsibility, mercy, and privacy.</p>
                   </div>
                 </div>
-                <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Learn About Mut’ah<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link>
+                {/* <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Learn About Mut’ah<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link> */}
+                <HoverButton label="Learn About Mut’ah" redirectPath="/about" />
               </div>
             </div>
           </div>
@@ -91,7 +93,8 @@ const Home = () => {
                 <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-10 uppercase flex items-center gap-2.5 pb-3 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">Texts & Prayers</h5>
                 <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">Recitations For Nikāḥ Al‑Mut‘ah</h2>
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">Begin With Sincere Niyyah (Intention), Recite With  Understanding, And Maintain Adab (Etiquette). Where Appropriate, Consult A Qualified Scholar For Personal Rulings.</p>
-                <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Read More<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link>
+                {/* <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Read More<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link> */}
+                <HoverButton label="Read More" redirectPath="/about" />
               </div>
               <div className="w-[707px] max-w-full">
                 <img className="w-full rounded-[20px]" src="./images/image-3.jpg" />
@@ -107,7 +110,8 @@ const Home = () => {
                 <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-10 uppercase flex items-center gap-2.5 pb-3 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">FAQ’S</h5>
                 <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">Frequently Asked Question About Our Programs</h2>
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Read More<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link>
+                {/* <Link to="#" className="group w-max transition-all duration-300 bg-[#BD8928] text-white capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-transparent hover:text-[#BD8928]">Read More<img className="invert brightness-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100" src="./images/arrow-gold.svg" /></Link> */}
+                 <HoverButton label="Read More" redirectPath="/about" />
               </div>
               <div className="w-[762px] max-w-full flex flex-col gap-5">
                 {faqs.map((faq, i) => (

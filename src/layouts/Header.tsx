@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import HoverButton from "../components/HoverButton";
 const Header = () => {
 
   type MenuItem = {
@@ -120,12 +121,13 @@ const Header = () => {
 
             {/* Desktop Button */}
             <div className="hidden w-[250px] lg:flex lg:justify-end">
-              <Link
+              {/* <Link
                 to="/contract"
                 className="bg-[#BD8928] text-white capitalize flex items-center gap-[9px] font-[poppins-medium] text-[18px] leading-7 px-[30px] py-[15px] rounded-[10px]"
               >
                 Start Contract <img src="./images/arrow-ic.svg" alt="arrow" />
-              </Link>
+              </Link> */}
+                <HoverButton label="Start Contract" redirectPath="/contract" />
             </div>
           </nav>
         </div>
@@ -194,12 +196,13 @@ const Header = () => {
                 </nav>
 
                 <div className="mt-6">
-                  <Link
+                  {/* <Link
                     to="/contract"
                     className="block w-full text-center bg-[#BD8928] text-white py-3 rounded-lg font-[poppins-medium] text-lg"
                   >
                     Start Contract
-                  </Link>
+                  </Link> */}
+                  <HoverButton label="Start Contract" redirectPath="/contract" />
                 </div>
               </div>
             </div>

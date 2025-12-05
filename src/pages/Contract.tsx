@@ -193,8 +193,11 @@ export default function ContractForm() {
       const data = await res.json();
       console.log("Response data:", data);
       if (!res.ok) throw new Error("Failed to send");
+      // alert("✅ Contract sent successfully!");
+      // window.location.href = data.certificate;
       alert("✅ Contract sent successfully!");
-      window.location.href = data.certificate;
+window.open(data.certificate, "_blank");
+
     } catch (err) {
       console.error(err);
       alert("❌ Failed to send contract");
