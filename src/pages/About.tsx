@@ -3,6 +3,7 @@ import MainLayout from '../layouts/MainLayout'
 import HoverButton from '../components/HoverButton'
 import CoreConditionComponent from '../components/CoreConditionComponent'
 import KeyTermComponent from '../components/KeyTermComponent'
+import VideoSection from '../components/VideoSection'
 
 const About = () => {
   const CoreConditionComponentData = [
@@ -78,7 +79,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="bg-[#BD8928] max-w-full w-full">
+        {/* <section className="bg-[#BD8928] max-w-full w-full">
           <div className="w-full max-w-[1635px] relative">
 
             <video id="myVideo" className="w-full relative" poster="./images/video-img.png">
@@ -95,7 +96,8 @@ const About = () => {
             </button>
 
           </div>
-        </section>
+        </section> */}
+        <VideoSection />
 
         {/* <section className="bg-[#fff] px-5 py-12 lg:py-24 relative hidden">
           <div className="max-w-[1500px] mx-auto">
@@ -247,10 +249,10 @@ const About = () => {
 
             <div className="flex flex-col gap-[10px] md:gap-[30px]">
               <div className="gap-[20px] md:gap-[40px] lg:gap-[60px] mt-12 grid md:grid-cols-2 lg:grid-cols-4">
-                
 
-                {keyTermProps.map((keyTermData,key)=>{
-                  return(<KeyTermComponent key={key} termImage={ "./images/"+keyTermData.termImage} termLabel1={keyTermData.termLabel1} termLabel2={keyTermData.termLabel2} termDescription={keyTermData.termDescription} />)
+
+                {keyTermProps.map((keyTermData, key) => {
+                  return (<KeyTermComponent key={key} termImage={"./images/" + keyTermData.termImage} termLabel1={keyTermData.termLabel1} termLabel2={keyTermData.termLabel2} termDescription={keyTermData.termDescription} />)
                 })}
 
                 {/* <div className="flex flex-col gap-[10px] md:gap-[20px]">
