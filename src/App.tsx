@@ -12,6 +12,7 @@ import ContactUs from './pages/ContactUs';
 import Testingone from './pages/Testingone';
 import ComingSoon from './components/ComingSoon';
 import NewContract from './pages/NewContract';
+import ContractForm from './pages/ContractForm';
 function App() {
 
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="/test-work" element={<Contract />} />
            <Route path="/new-contract" element={<NewContract />} />
            {/* <Route path="/contract" element={<Home />} /> */}
-             <Route path="/contract" element={<ComingSoon />} />
+             <Route path="/contract" element={<ContractForm />} />
           {/* <Route path="/faq" element={<Faq />} /> */}
           <Route path="/faq" element={<ComingSoon />} />
           <Route path="/test-contact" element={<ContactUs />} />

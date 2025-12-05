@@ -50,6 +50,20 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('/fonts/poppine-bold/Poppins-Bold.eot');
+    src: url('/fonts/poppine-bold/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/poppine-bold/Poppins-Bold.woff2') format('woff2'),
+        url('/fonts/poppine-bold/Poppins-Bold.woff') format('woff'),
+        url('/fonts/poppine-bold/Poppins-Bold.ttf') format('truetype'),
+        url('/fonts/poppine-bold/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'arial';
     src: url('/fonts/arial-bold/Arial-BoldMT.eot');
