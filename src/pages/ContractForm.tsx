@@ -365,7 +365,7 @@ const ContractForm = () => {
                                                                         width: 600,
                                                                         height: 150,
                                                                         // className: "font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[102px] p-[10px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]",
-                                                                         className: "font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7]",
+                                                                        className: "font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7]",
                                                                     }}
                                                                 />
                                                                 <div className="mt-2 flex justify-between text-sm">
@@ -431,9 +431,21 @@ const ContractForm = () => {
                                                     Witnesses Are Recommended For Clarity And Record.
                                                 </p>
                                                 <div className="text-center">
-                                                    <button type="submit" className="max-w-[125px] w-full h-[57px] bg-[#BD8928] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]">
-                                                        {loading ? "Submitting..." : "Submit"}
+                                                   
+                                                    <button
+                                                    disabled={loading}
+                                                        type="submit"
+                                                        className="relative inline-flex justify-center items-center max-w-[125px] w-full h-[57px] bg-[#BD8928] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]"
+                                                    >
+                                                        {loading ? (
+                                                        <div
+                                                            className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 border-4 border-white border-t-transparent rounded-full animate-spin"
+                                                        ></div>
+                                                        ) : (
+                                                            "Submit"
+                                                        )}
                                                     </button>
+
                                                 </div>
                                             </form>
                                         </div>
