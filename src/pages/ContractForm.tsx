@@ -32,15 +32,40 @@ const ContractForm = () => {
     };
     const [loading, setLoading] = useState<boolean>(false);
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const smoothScrollTo = (element: HTMLElement) => {
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const offset = elementPosition - window.innerHeight / 2.5;
+    // const smoothScrollTo = (element: HTMLElement) => {
+    //     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    //     const offset = elementPosition - window.innerHeight / 2.5;
 
-        window.scrollTo({
-            top: offset,
-            behavior: "smooth",
-        });
+    //     window.scrollTo({
+    //         top: offset,
+    //         behavior: "smooth",
+    //     });
+    // };
+
+    const smoothScrollTo = (element: HTMLElement) => {
+    const target = element.getBoundingClientRect().top + window.pageYOffset - window.innerHeight / 2.5;
+    const start = window.pageYOffset;
+    const distance = target - start;
+    const duration = 800; // smoothness time
+    let startTime: number | null = null;
+
+    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+    const animation = (currentTime: number) => {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        window.scrollTo(0, start + distance * easeOutCubic(progress));
+
+        if (progress < 1) {
+            requestAnimationFrame(animation);
+        }
     };
+
+    requestAnimationFrame(animation);
+};
+
 
 
     const formRef = useRef<FormFields>({
