@@ -97,7 +97,7 @@ const Header = () => {
                     to={item.link}
                     className={`font-[poppins-medium] text-[16px] xl:text-[18px] leading-7 transition ${isActive
                       ? "text-[#BD8928] border-b-2 border-[#BD8928] pb-1" 
-                      : "text-black hover:text-[#BD8928]"
+                      : "text-black hover:text-[#BD8928] border-b-2 border-transparent pb-1"
                       }`}
                   >
                     {item.label}
