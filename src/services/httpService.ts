@@ -1,4 +1,3 @@
-// src/services/httpService.ts
 import apiClient from "./apiClient";
 
 export const http = {

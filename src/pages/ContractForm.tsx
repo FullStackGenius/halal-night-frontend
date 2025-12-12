@@ -32,39 +32,29 @@ const ContractForm = () => {
     };
     const [loading, setLoading] = useState<boolean>(false);
     const [errors, setErrors] = useState<Record<string, string>>({});
-    // const smoothScrollTo = (element: HTMLElement) => {
-    //     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-    //     const offset = elementPosition - window.innerHeight / 2.5;
-
-    //     window.scrollTo({
-    //         top: offset,
-    //         behavior: "smooth",
-    //     });
-    // };
-
     const smoothScrollTo = (element: HTMLElement) => {
-    const target = element.getBoundingClientRect().top + window.pageYOffset - window.innerHeight / 2.5;
-    const start = window.pageYOffset;
-    const distance = target - start;
-    const duration = 800; // smoothness time
-    let startTime: number | null = null;
+        const target = element.getBoundingClientRect().top + window.pageYOffset - window.innerHeight / 2.5;
+        const start = window.pageYOffset;
+        const distance = target - start;
+        const duration = 800; // smoothness time
+        let startTime: number | null = null;
 
-    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+        const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
 
-    const animation = (currentTime: number) => {
-        if (!startTime) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
+        const animation = (currentTime: number) => {
+            if (!startTime) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
 
-        window.scrollTo(0, start + distance * easeOutCubic(progress));
+            window.scrollTo(0, start + distance * easeOutCubic(progress));
 
-        if (progress < 1) {
-            requestAnimationFrame(animation);
-        }
+            if (progress < 1) {
+                requestAnimationFrame(animation);
+            }
+        };
+
+        requestAnimationFrame(animation);
     };
-
-    requestAnimationFrame(animation);
-};
 
 
 
@@ -381,7 +371,6 @@ const ContractForm = () => {
                                                         ).map(({ label, ref, key }) => (
                                                             <div key={key} ref={signatureRefs[key]}>
                                                                 <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">{label}*</label>
-                                                                {/* <div className="border border-[#BD8928] rounded-lg bg-gray-50 p-2"> */}
                                                                 <SignatureCanvas
                                                                     ref={ref}
                                                                     onEnd={() => handleSigEnd(ref, key)}
@@ -389,7 +378,6 @@ const ContractForm = () => {
                                                                     canvasProps={{
                                                                         width: 600,
                                                                         height: 150,
-                                                                        // className: "font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[102px] p-[10px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]",
                                                                         className: "font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7]",
                                                                     }}
                                                                 />
@@ -409,14 +397,6 @@ const ContractForm = () => {
                                                                 {errors[key] && <p className="text-red-600 text-sm">{errors[key]}</p>}
                                                             </div>
                                                         ))}
-                                                    {/* <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Signature of Male*</label>
-                                                        <input type="text" className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[102px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]" placeholder="Sign Or Type Full Name" />
-                                                    </div>
-                                                    <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Signature of Female*</label>
-                                                        <input type="text" className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[102px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]" placeholder="Sign Or Type Full Name" />
-                                                    </div> */}
                                                 </div>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[20px] md:mb-[28px] lg:mb-[32px]">
                                                     <div>
@@ -456,16 +436,16 @@ const ContractForm = () => {
                                                     Witnesses Are Recommended For Clarity And Record.
                                                 </p>
                                                 <div className="text-center">
-                                                   
+
                                                     <button
-                                                    disabled={loading}
+                                                        disabled={loading}
                                                         type="submit"
                                                         className="relative inline-flex justify-center items-center max-w-[125px] w-full h-[57px] bg-[#BD8928] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]"
                                                     >
                                                         {loading ? (
-                                                        <div
-                                                            className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 border-4 border-white border-t-transparent rounded-full animate-spin"
-                                                        ></div>
+                                                            <div
+                                                                className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 border-4 border-white border-t-transparent rounded-full animate-spin"
+                                                            ></div>
                                                         ) : (
                                                             "Submit"
                                                         )}
