@@ -11,7 +11,7 @@ interface ContactFormData {
     message: string;
 }
 
-
+export const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_MAIL;
 const ContactUsPage = () => {
 
     const [formData, setFormData] = useState<ContactFormData>({
@@ -66,7 +66,11 @@ const ContactUsPage = () => {
         }
     };
 
-
+    const mailSubject = encodeURIComponent(formData.subject || `Message From ${formData.name}`);
+    const mailBody = encodeURIComponent(
+        `Assalamu ʿAlaykum Halal Nights,\n\nReason: ${formData.reason}\nFrom: ${formData.name} <${formData.email}>\n\nMessage:\n${formData.message}\n\nWas‑Salaam.`
+    );
+    const mailtoHref = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${mailSubject}&body=${mailBody}`;
 
 
     return (
@@ -229,12 +233,15 @@ const ContactUsPage = () => {
                                         <input type="text" className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[50px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D]" placeholder="https://yourdomain.com/api/contact" />
                                     </div> */}
                                     <div className="text-center flex flex-col lg:flex-row gap-[10px] mb-[0px]">
+                                        <a href={mailtoHref} className="py-[15px] px-[30px] h-[57px] bg-[#BD8928] border border-[#C8AD79] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]">
+                                            Compose Email
+                                        </a>
                                         <button className="py-[15px] px-[30px] h-[57px] bg-[#BD8928] border border-[#C8AD79] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]"
                                             type="submit"
                                             disabled={loading}
                                         >
                                             {loading ? "Sending..." : "Send Message"}
-                                          
+
                                         </button>
                                         {/* <button className="py-[15px] px-[30px] border border-[#C8AD79] h-[57px] text-[18px] rounded-[10px] font-[poppins-medium] text-[#BD8928] px-6 py-2 hover:bg-[#C8AD79] hover:text-[#fff]">
                                             Send Via Webhook
