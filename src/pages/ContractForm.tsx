@@ -440,7 +440,7 @@ const ContractForm = () => {
                                                     <button
                                                         disabled={loading}
                                                         type="submit"
-                                                        className="relative inline-flex justify-center items-center max-w-[125px] w-full h-[57px] bg-[#BD8928] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]"
+                                                        className="relative inline-flex justify-center items-center max-w-[125px] w-full h-[57px] bg-[#BD8928] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928] cursor-pointer"
                                                     >
                                                         {loading ? (
                                                             <div

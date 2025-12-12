@@ -5,28 +5,28 @@ import { Link } from 'react-router-dom';
 const Faq = () => {
   const faqs = [
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "What is Mut'ah (Temporary Marriage)?",
+      a: "Mut'ah is a temporary marriage contract permitted under certain Islamic schools, defining the agreed period and dowry between the two parties.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is this contract legally binding?",
+      a: "This digital form helps generate a written agreement. Its legal recognition depends on your country's laws and personal adherence.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Can I customize the terms of the contract?",
+      a: "Yes. You can include any additional terms in the 'Conditions / Notes' section before finalizing your contract.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is my data stored on the server?",
+      a: "No. All contract data is processed locally in your browser and not saved or shared with any third party.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Can I customize the terms of the contract?",
+      a: "Yes. You can include any additional terms in the 'Conditions / Notes' section before finalizing your contract.",
     },
     {
-      q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      q: "Is my data stored on the server?",
+      a: "No. All contract data is processed locally in your browser and not saved or shared with any third party.",
     }
 
   ];

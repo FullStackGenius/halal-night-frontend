@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import HoverButton from "../components/HoverButton";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const faqs = [
@@ -46,7 +47,7 @@ const Home = () => {
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">With <b>Niyyah</b> (Intention), <b>Adab</b> (Etiquette), And Consent, Halal Nights Helps You Understand, Recite,  And Record a Temporary Marriage In A Manner That Honours Faith And  Privacy.</p>
                 <div className="mobile_banner_btn flex items-center gap-2.5 lg:gap-4">
                   <HoverButton label="Begin The Contract" redirectPath="/contract" />
-                  <a href="#" className="group transition-all duration-300 bg-transparent text-[#BD8928] capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-[#bd8928] hover:text-white">Learn About Mut’ah <img className="transition-all duration-300 group-hover:invert group-hover:brightness-0" src="/images/arrow-gold.svg" /></a>
+                  <Link to="/about" className="group transition-all duration-300 bg-transparent text-[#BD8928] capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-[#bd8928] hover:text-white">Learn About Mut’ah <img className="transition-all duration-300 group-hover:invert group-hover:brightness-0" src="/images/arrow-gold.svg" /></Link>
                 </div>
               </div>
               <div className="w-[634px] max-w-full">

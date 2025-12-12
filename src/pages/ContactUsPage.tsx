@@ -236,7 +236,7 @@ const ContactUsPage = () => {
                                         <a href={mailtoHref} className="py-[15px] px-[30px] h-[57px] bg-[#BD8928] border border-[#C8AD79] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]">
                                             Compose Email
                                         </a>
-                                        <button className="py-[15px] px-[30px] h-[57px] bg-[#BD8928] border border-[#C8AD79] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928]"
+                                        <button className="py-[15px] px-[30px] h-[57px] bg-[#BD8928] border border-[#C8AD79] text-[18px] rounded-[10px] font-[poppins-medium] text-white px-6 py-2 hover:bg-[#fff] hover:text-[#BD8928] cursor-pointer"
                                             type="submit"
                                             disabled={loading}
                                         >
@@ -246,8 +246,8 @@ const ContactUsPage = () => {
                                         {/* <button className="py-[15px] px-[30px] border border-[#C8AD79] h-[57px] text-[18px] rounded-[10px] font-[poppins-medium] text-[#BD8928] px-6 py-2 hover:bg-[#C8AD79] hover:text-[#fff]">
                                             Send Via Webhook
                                         </button> */}
-                                        <br />
-                                        {success && (
+                                    </div>
+                                     {success && (
                                             <p className="text-green-600 font-[poppins-medium] mt-2">
                                                 ✅ Message sent successfully!
                                             </p>
@@ -255,7 +255,6 @@ const ContactUsPage = () => {
                                         {error && (
                                             <p className="text-red-600 font-[poppins-medium] mt-2">{error}</p>
                                         )}
-                                    </div>
                                     <p className="text-[#89693A] text-[14px] leading-[21px] font-[poppins-medium] pt-[20px]">Using “Compose Email” opens your email app with a prefilled message to  contact@halalnights.com. The Webhook option lets you integrate your own  server to send messages programmatically.</p>
                                 </form>
                             </div>
