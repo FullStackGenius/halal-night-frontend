@@ -213,7 +213,7 @@ const ContractForm = () => {
             const data = await res.json();
             if (!res.ok) throw new Error("Submission failed");
 
-            alert("✔ Contract sent successfully!");
+            // alert("✔ Contract sent successfully!");
             window.open(data.data.certificate, "_blank");
 
         } catch (err) {
