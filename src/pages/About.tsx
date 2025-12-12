@@ -58,7 +58,7 @@ const About = () => {
                 <div className="w-[615px] lg:w-[958px] max-w-full">
                   <h5 className="text-[#BD8928] font-[poppins-medium] text-[18px] leading-[27px] uppercase flex items-center gap-2.5 pb-3 before:bg-[#BD8928] before:w-[30px] before:h-0.5 before:inline-flex before:rounded-2xl">About — A Respectful Overview of Nikāḥ Al‑Mut‘ah</h5>
                   <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">Meaning, Origins, Conditions, and Acceptance</h2>
-                  <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7"><span className="font-[poppins-semibold]">Nikāḥ Al‑Mut‘ah</span> literally means a time‑bound marriage contract. In Ja‘farī (Twelver Shia) jurisprudence, it is a lawful union formed with consent, a known dower (Mahr), and a defined duration, enacted through a clear formula of offer and acceptance.</p>
+                  <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7"><span className="font-[poppins-bold]">Nikāḥ Al‑Mut‘ah</span> literally means a time‑bound marriage contract. In Ja‘farī (<span  className="font-[poppins-bold]" >Twelver Shia</span>) jurisprudence, it is a lawful union formed with consent, a known dower (<span className="font-[poppins-bold]">Mahr</span>), and a defined duration, enacted through a clear formula of offer and acceptance.</p>
                 </div>
 
               </div>

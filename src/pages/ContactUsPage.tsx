@@ -160,7 +160,7 @@ const ContactUsPage = () => {
                             <div className="w-full lg:w-[800px] bg-[#FFFDF7] border border-[#C8AD79] rounded-[10px] pt-[20px] pb-[20px] px-[20px] md:pt-[35px] md:pb-[40px] md:px-[36px]">
 
                                 <h2 className="text-left text-[#89693A] font-[poppins-bold] tracking-[2px] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] sm:tracking-[1px]">
-                                    Send A Message
+                                    SEND A MESSAGE
                                 </h2>
 
                                 <form className="space-y-6 pt-[12px] sm:pt-[15px] md:pt-[16px] lg:pt-[16px]" onSubmit={handleSubmit}>

@@ -53,7 +53,7 @@ const Prayers = () => {
             <div className="flex items-center justify-center gap-[15px] xl:gap-[15px]">
               <a className="font-[poppins-medium] text-[18px] leading-7 text-black" href="#"><span className="text-[#BD8928]">Home</span></a>
               <span className=""><img src="/images/right-b-arrow.png" /></span>
-              <h3 className="font-[poppins-medium] text-[18px] leading-7 text-black">Steps</h3>
+              <h3 className="font-[poppins-medium] text-[18px] leading-7 text-black">Prayers & Text</h3>
             </div>
 
           </div>
