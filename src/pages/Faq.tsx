@@ -35,6 +35,27 @@ const Faq = () => {
 
   return (
     <MainLayout>
+      <main>
+       <section className="inner-section bg-[#F1F3F5] h-[450px] px-5 relative">
+          <div className="absolute bottom-0 left-0">
+            <img className="max-w-[160px] sm:max-w-full" src="/images/title-shape-left.png" />
+          </div>
+          <div className="max-w-[900px] mx-auto flex items-center justify-center w-full h-full flex-col gap-[20px]">
+            <h2 className="text-[40px] leading-[60px] lg:text-[50px] lg:leading-[70px] xl:text-[70px] xl:leading-[90px] text-black font-[berlin-sans-fb-demi] text-center">Faq</h2>
+
+            <div className="flex items-center justify-center gap-[15px] xl:gap-[15px]">
+              <Link className="font-[poppins-medium] text-[18px] leading-7 text-black" to="/"><span className="text-[#BD8928]">Home</span></Link>
+              <span className=""><img src="/images/right-b-arrow.png" /></span>
+              <h3 className="font-[poppins-medium] text-[18px] leading-7 text-black">Faq</h3>
+            </div>
+
+          </div>
+          <div className="absolute top-0 right-0">
+            <img className="max-w-[160px] sm:max-w-full" src="/images/title-shape-right.png" />
+          </div>
+
+        </section>
+     
       <section className="px-5 py-12 lg:py-24">
         <div className="max-w-[1500px] mx-auto">
           <div className="flex gap-5 justify-between items-start flex-col md:flex-row">
@@ -75,6 +96,7 @@ const Faq = () => {
           </div>
         </div>
       </section>
+       </main>
     </MainLayout>
   )
 }
