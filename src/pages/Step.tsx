@@ -115,16 +115,30 @@ const Step = () => {
 
                 <div className="bg-[#F8F1E4] p-6 rounded-[30px] pt-[24px] pb-[26px] px-[35px] w-full max-w-[1266px]">
                   <div className="text-4xl mb-[27px]">
-                    <h3 className="font-[berlin-sans-fb-demi] text-[26px] leading-[32px] sm:text-[30px] sm:leading-[30px] lg:text-[40px] lg:leading-[40px] text-[#000] text-left">Establish Intention — An‑Niyyah (النية)</h3>
+                    <h3 className="font-[berlin-sans-fb-demi] text-[26px] leading-[32px] sm:text-[30px] sm:leading-[30px] lg:text-[40px] lg:leading-[40px] text-[#000] text-left">Recite The Contract — Ijāb Wa‑Qubūl (الإيجاب والقبول)</h3>
                     <p className="font-[poppins-regular] text-[18px] leading-[24px] md:leading-[42px] text-black pt-[12px] text-left">
-                      Begin With Sincere Intention Seeking Nearness To Allah. Clarify That The Purpose Is A Lawful Temporary Marriage In Accordance With Faith,  Dignity, And Consent.
+                      Perform The Verbal Offer And Acceptance Correctly. The Woman Recites The Ijāb,  And The Man Recites The Qubūl, Without Interrupting Or Changing The  Meaning.
                     </p>
+                  </div>
+                  <div className="flex flex-col gap-[20px]">
+                  <div className="text-4xl bg-[#F4EFE5] rounded-[20px] p-6 px-[35px] pb-[32px]">
+                    <h4 className="font-[berlin-sans-fb-demi] text-[24px] leading-[36px] text-[#000] text-left">Ijāb — Offer (الإيجاب)</h4>
+                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">زَوَّجْتُكَ نَفْسِي نِكَاحَ الْمُتْعَةِ عَلَى الْمَهْرِ الْمَعْلُومِ وَالْمُدَّةِ الْمَعْلُومَةِ</p>
+                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">Zawwajtuka Nafsī Nikāḥ Al‑MutʿAh ʿAlā Al‑Mahr Al‑MaʿLūM Wa Al‑Mudda Al‑MaʿLūMah</p>
+                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">I Have Married Myself To You In MutʿAh For The Agreed Dower And The Defined Term.</p>
+                  </div>
+                  <div className="text-4xl bg-[#F4EFE5] rounded-[20px] p-6 px-[35px] pb-[32px]">
+                    <h4 className="font-[berlin-sans-fb-demi] text-[24px] leading-[36px] text-[#000] text-left">Qubūl — Acceptance (القبول)</h4>
+                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">قَبِلْتُ النِّكَاحَ كَمَا زَوَّجْتِنِي عَلَى الْمَهْرِ وَالْمُدَّةِ الْمَعْلُومَيْنِ</p>
+                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">Qabiltu An‑Nikāḥ Kamā ZawwajtīNī ʿAlā Al‑Mahr Wa Al‑Mudda Al‑MaʿLūMayn</p>
+                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">I Accept The Marriage As You Have Offered, For The Agreed Dower And Term.</p>
                   </div>
                   <div className="text-4xl bg-[#F4EFE5] rounded-[20px] p-6 px-[35px] pb-[32px]">
                     <h4 className="font-[berlin-sans-fb-demi] text-[24px] leading-[36px] text-[#000] text-left">Recommended Du‘ā</h4>
-                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">اَللّٰهُمَّ أَخْلِصْ نِيَّاتِنَا لَكَ وَاجْعَلْهَا قُرْبَةً إِلَيْكَ</p>
-                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">AllāHumma Akhliṣ NiyyāTinā Laka Wa‑JʿAlhā Qurbatan Ilayka</p>
-                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">O Allah, Purify Our Intentions For You And Make Them A Means Of Nearness To You.</p>
+                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">اَللّٰهُمَّ تَقَبَّلْ مِنَّا هٰذَا الْعَقْدَ وَبَارِكْ فِيهِ</p>
+                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">AllāHumma Taqabbal Minnā HāDhā Al‑ʿAqda Wa‑BāRik FīHi</p>
+                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">O Allah, Accept This Contract From Us And Bless It.</p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -139,16 +153,15 @@ const Step = () => {
 
                 <div className="bg-[#F1F3F5] p-6 rounded-[30px] pt-[24px] pb-[26px] px-[35px] w-full max-w-[1266px]">
                   <div className="text-4xl mb-[27px]">
-                    <h3 className="font-[berlin-sans-fb-demi] text-[26px] leading-[32px] sm:text-[30px] sm:leading-[30px] lg:text-[40px] lg:leading-[40px] text-[#000] text-left">Establish Intention — An‑Niyyah (النية)</h3>
+                    <h3 className="font-[berlin-sans-fb-demi] text-[26px] leading-[32px] sm:text-[30px] sm:leading-[30px] lg:text-[40px] lg:leading-[40px] text-[#000] text-left">Observe The Iddah — Al‑ʿIddah (الْعِدَّة)</h3>
                     <p className="font-[poppins-regular] text-[18px] leading-[24px] md:leading-[42px] text-black pt-[12px] text-left">
-                      Begin With Sincere Intention Seeking Nearness To Allah. Clarify That The Purpose Is A Lawful Temporary Marriage In Accordance With Faith,  Dignity, And Consent.
-                    </p>
+After The Term Concludes (Or If The Remaining Term Is Gifted Back), The  Woman Observes The Required Waiting Period (ʿIddah) Before Any New  Marriage. Details May Vary; Consult Your Marjaʿ.                    </p>
                   </div>
                   <div className="text-4xl bg-[#E7EAED] rounded-[20px] p-6 px-[35px] pb-[32px]">
                     <h4 className="font-[berlin-sans-fb-demi] text-[24px] leading-[36px] text-[#000] text-left">Recommended Du‘ā</h4>
-                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">اَللّٰهُمَّ أَخْلِصْ نِيَّاتِنَا لَكَ وَاجْعَلْهَا قُرْبَةً إِلَيْكَ</p>
-                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">AllāHumma Akhliṣ NiyyāTinā Laka Wa‑JʿAlhā Qurbatan Ilayka</p>
-                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">O Allah, Purify Our Intentions For You And Make Them A Means Of Nearness To You.</p>
+                    <p className="font-[poppins-regular] text-[20px] leading-[28px] sm:text-[24px] sm:leading-[36px] text-black pt-0.5 text-left">اَللّٰهُمَّ اهْدِنَا لِمَا اخْتَلَفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ</p>
+                    <p className="italic text-left text-[#BD8928] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px] pt-3">AllāHumma Ihdinā Limā Ikhtulifa FīHi Mina Al‑ḤAqqi Bi‑Idhnik</p>
+                    <p className="text-left text-[#000] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[30px]">O Allah, Guide Us To The Truth In Matters Where People Differ, By Your Permission.</p>
                   </div>
                 </div>
               </div>
