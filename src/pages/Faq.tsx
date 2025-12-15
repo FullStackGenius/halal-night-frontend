@@ -76,7 +76,7 @@ const Faq = () => {
                     className="flex justify-between items-center w-full text-left cursor-pointer font-[poppins-semi-bold] text-[18px] leading-7"
                   >
                     {faq.q}
-                    <span className="w-[45px] h-[45px] bg-[#BD8928] rounded-[10px] flex items-center justify-center transition-transform duration-300">
+                    <span className="w-full h-[38px] max-w-[38px] md:h-[45px] md:max-w-[45px] bg-[#BD8928] rounded-[10px] flex items-center justify-center transition-transform duration-300">
                       <img
                         className={`transform transition-transform ${openIndex === i ? "rotate-180" : "rotate-0"
                           }`}

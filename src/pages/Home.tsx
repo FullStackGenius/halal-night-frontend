@@ -45,7 +45,7 @@ const Home = () => {
               <div className="w-[770px] lg:w-[630px] max-w-full md:pb-8 p-0">
                 <h1 className="text-[40px] leading-[60px] lg:text-[50px] lg:leading-[70px] xl:text-[70px] xl:leading-[90px] text-black font-[berlin-sans-fb-demi]">A Dignified Path To <br /><span className="text-[#BD8928]">Nikāḥ Al-Mut‘ah</span></h1>
                 <p className="font-[poppins-regular] text-[18px] leading-10 text-black pt-4 pb-7">With <b>Niyyah</b> (Intention), <b>Adab</b> (Etiquette), And Consent, Halal Nights Helps You Understand, Recite,  And Record a Temporary Marriage In A Manner That Honours Faith And  Privacy.</p>
-                <div className="mobile_banner_btn flex items-center gap-2.5 lg:gap-4">
+                <div className="mobile_banner_btn flex items-center gap-2.5 lg:gap-4 flex-wrap">
                   <HoverButton label="Begin The Contract" redirectPath="/contract" />
                   <Link to="/about" className="group transition-all duration-300 bg-transparent text-[#BD8928] capitalize flex justify-center items-center lg:gap-[9px] gap-1.5 font-[poppins-medium] p-2.5 text-[14px] lg:text-[16px] xl:text-[18px] leading-7 lg:px-5 lg:py-3.5  xl:px-[30px] xl:py-[15px] border border-[#BD8928] rounded-[10px] hover:bg-[#bd8928] hover:text-white">Learn About Mut’ah <img className="transition-all duration-300 group-hover:invert group-hover:brightness-0" src="/images/arrow-gold.svg" /></Link>
                 </div>
@@ -57,7 +57,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="px-5 py-12 lg:py-[150px]">
+        <section className="pt-[60px] pb-[60px] px-[20px]
+  md:pt-[80px] md:pb-[80px]
+  lg:pt-[95px] lg:pb-[95px]">
           <div className="max-w-[1500px] mx-auto">
             <div className="flex flex-col md:flex-row gap-5 justify-between">
               <div className="w-[682px] max-w-full">
@@ -118,7 +120,7 @@ const Home = () => {
                       className="flex justify-between items-center w-full text-left cursor-pointer font-[poppins-semi-bold] text-[18px] leading-7"
                     >
                       {faq.q}
-                      <span className="w-[45px] h-[45px] bg-[#BD8928] rounded-[10px] flex items-center justify-center transition-transform duration-300">
+                      <span className="w-full h-[38px] max-w-[38px] md:h-[45px] md:max-w-[45px] bg-[#BD8928] rounded-[10px] flex items-center justify-center transition-transform duration-300">
                         <img
                           className={`transform transition-transform ${openIndex === i ? "rotate-180" : "rotate-0"
                             }`}

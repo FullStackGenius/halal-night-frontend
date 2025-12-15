@@ -26,7 +26,9 @@ const Step = () => {
         </section>
 
 
-        <section className="py-16 px-4 bg-white ">
+        <section className="pt-[60px] pb-[70px] px-[20px]
+  md:pt-[80px] md:pb-[90px]
+  lg:pt-[95px] lg:pb-[110px] bg-white ">
           <div className="max-w-[1504px] mx-auto text-center">
 
             <div className="flex justify-center items-center flex-col">
@@ -34,12 +36,12 @@ const Step = () => {
               <h2 className="font-[berlin-sans-fb-demi] text-[34px] leading-12 xl:text-[46px] xl:leading-[60px] text-black">A Clear Path With Intention, Consent,<br /> And Clarity</h2>
             </div>
 
-            <div className="sm:mt-[40px] sm:mb-[40px] lg:mt-[100px] lg:mb-[100px] mt-[40px] flex flex-col w-full gap-[30px] md:gap-[40px] lg:gap-[100px] relative">
+            <div className="sm:mt-[40px] lg:mt-[100px] mt-[40px] flex flex-col w-full gap-[30px] md:gap-[40px] lg:gap-[100px] relative">
 
               <div className="flex flex-col md:flex-row gap-[84px] max-lg:gap-[40px] z-[1] justify-center items-center">
 
-                <div className="w-[150px] flex justify-center items-center">
-                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] pt-[34px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[60px] sm:leading-[60px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">01</h3></div>
+                <div className=" w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] bg-[#F1F3F5] rounded-[20px] flex justify-center items-center">
+                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[40px] sm:leading-[40px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">01</h3></div>
                 </div>
 
 
@@ -62,8 +64,8 @@ const Step = () => {
 
               <div className="flex flex-col md:flex-row gap-[84px] max-lg:gap-[40px] z-[1] justify-center items-center">
 
-                <div className="w-[150px] flex justify-center items-center">
-                  <div className="text-4xl bg-[#F9F4EC] p-6 rounded-[20px] pt-[34px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[60px] sm:leading-[60px] lg:text-[80px] lg:leading-[80px] text-[#BD8928] text-center">02</h3></div>
+                <div className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] bg-[#F9F4EC] rounded-[20px] flex justify-center items-center">
+                  <div className="text-4xl bg-[#F9F4EC] p-6 rounded-[20px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[40px] sm:leading-[40px] lg:text-[80px] lg:leading-[80px] text-[#BD8928] text-center">02</h3></div>
                 </div>
 
 
@@ -86,8 +88,8 @@ const Step = () => {
 
               <div className="flex flex-col md:flex-row gap-[84px] max-lg:gap-[40px] z-[1] justify-center items-center">
 
-                <div className="w-[150px] flex justify-center items-center">
-                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] pt-[34px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[60px] sm:leading-[60px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">03</h3></div>
+                <div className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] bg-[#F1F3F5] rounded-[20px] flex justify-center items-center">
+                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[40px] sm:leading-[40px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">03</h3></div>
                 </div>
 
 
@@ -108,8 +110,8 @@ const Step = () => {
 
               <div className="flex flex-col md:flex-row gap-[84px] max-lg:gap-[40px] z-[1] justify-center items-center">
 
-                <div className="w-[150px] flex justify-center items-center">
-                  <div className="text-4xl bg-[#F9F4EC] p-6 rounded-[20px] pt-[34px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[60px] sm:leading-[60px] lg:text-[80px] lg:leading-[80px] text-[#BD8928] text-center">04</h3></div>
+                <div className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] bg-[#F9F4EC] rounded-[20px] flex justify-center items-center">
+                  <div className="text-4xl bg-[#F9F4EC] p-6 rounded-[20px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[40px] sm:leading-[40px] lg:text-[80px] lg:leading-[80px] text-[#BD8928] text-center">04</h3></div>
                 </div>
 
 
@@ -146,8 +148,8 @@ const Step = () => {
 
               <div className="flex flex-col md:flex-row gap-[84px] max-lg:gap-[40px] z-[1] justify-center items-center">
 
-                <div className="w-[150px] flex justify-center items-center">
-                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] pt-[34px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[60px] sm:leading-[60px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">05</h3></div>
+                <div className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] bg-[#F1F3F5] rounded-[20px] flex justify-center items-center">
+                  <div className="text-4xl bg-[#F1F3F5] p-6 rounded-[20px] w-full"><h3 className="font-[poppins-bold] text-[40px] leading-[40px] sm:text-[40px] sm:leading-[40px] lg:text-[80px] lg:leading-[80px] text-[#61768E] text-center">05</h3></div>
                 </div>
 
 
@@ -169,7 +171,7 @@ After The Term Concludes (Or If The Remaining Term Is Gifted Back), The  Woman O
 
 
               <div className="w-[1px] bg-[#00000033] absolute top-0 left-0 right-0 mx-auto h-full 
-            md:left-0 md:ml-[73px] md:right-auto">
+            md:left-0 md:ml-[50px] lg:ml-[73px] md:right-auto">
               </div>
             </div>
           </div>

@@ -14,27 +14,27 @@ const Prayers = () => {
   const PrayerDevotionalData: any = [
     {
       "data1": "Du‘ā For Purity (الطُّهْر)",
-      "data2": "اَللّٰهُمَّ اجْعَلْ هٰذَا الْعَقْدَ بَرَكَةً وَرَحْمَةً، وَارْزُقْنَا فِيهِ الْمَوَدَّةَ وَالرَّحْمَةَ وَالطُّهْرَ",
-      "data3": "AllāHumma Ij‘Al HāDhā Al‑‘Aqda Barakatan Wa RaḥMatan, Wa Rzuqnā FīHi Al‑Mawaddata Wa Al‑RaḥMata Wa Aṭ‑ṬUhr",
-      "data4": "O Allah, Make This Contract A Source Of Blessing And Mercy, And Grant Us Affection, Compassion, And Purity Within It.",
+      "data2": "اَللّٰهُمَّ  طَهِّرْ قُلُوبَنَا وَأَلْسِنَتَنَا وَأَعْمَالَنَا، وَاجْعَلْنَا مِنَ  التَّوَّابِينَ وَاجْعَلْنَا مِنَ الْمُتَطَهِّرِينَ",
+      "data3": "AllāHumma ṬAhhir QulūBanā Wa Alsinatanā Wa A‘MāLanā, Wa‑J‘Alnā Mina At‑TawwāBīNa Wa‑J‘Alnā Mina Al‑MuṭAṭAhhirīN",
+      "data4": "O Allah, Purify Our Hearts, Our Tongues, And Our Deeds; Make Us Among Those Who Constantly Repent And Keep Themselves Pure.",
     },
     {
-      "data1": "Du‘ā For Purity (الطُّهْر)",
-      "data2": "اَللّٰهُمَّ اجْعَلْ هٰذَا الْعَقْدَ بَرَكَةً وَرَحْمَةً، وَارْزُقْنَا فِيهِ الْمَوَدَّةَ وَالرَّحْمَةَ وَالطُّهْرَ",
-      "data3": "AllāHumma Ij‘Al HāDhā Al‑‘Aqda Barakatan Wa RaḥMatan, Wa Rzuqnā FīHi Al‑Mawaddata Wa Al‑RaḥMata Wa Aṭ‑ṬUhr",
-      "data4": "O Allah, Make This Contract A Source Of Blessing And Mercy, And Grant Us Affection, Compassion, And Purity Within It.",
+      "data1": "Du‘ā For Gratitude (الشُّكْر)",
+      "data2": "اَلْحَمْدُ لِلّٰهِ عَلَى نِعْمَتِهِ، اَللّٰهُمَّ أَعِنَّا عَلَى شُكْرِ نِعَمِكَ وَذِكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+      "data3": "Al‑ḤAmdu LillāHi ‘Alā Ni‘Matihī, AllāHumma A‘Innā ‘Alā Shukri Ni‘Amika Wa Dhikrika Wa ḤUsni ‘IbāDatika",
+      "data4": "All Praise Is For Allah For His Favor. O Allah, Help Us To Be Grateful  For Your Blessings, To Remember You, And To Worship You Well.",
     },
     {
-      "data1": "Du‘ā For Purity (الطُّهْر)",
-      "data2": "اَللّٰهُمَّ اجْعَلْ هٰذَا الْعَقْدَ بَرَكَةً وَرَحْمَةً، وَارْزُقْنَا فِيهِ الْمَوَدَّةَ وَالرَّحْمَةَ وَالطُّهْرَ",
-      "data3": "AllāHumma Ij‘Al HāDhā Al‑‘Aqda Barakatan Wa RaḥMatan, Wa Rzuqnā FīHi Al‑Mawaddata Wa Al‑RaḥMata Wa Aṭ‑ṬUhr",
-      "data4": "O Allah, Make This Contract A Source Of Blessing And Mercy, And Grant Us Affection, Compassion, And Purity Within It.",
+      "data1": "Du‘ā For Protection (الحِفْظ)",
+      "data2": "اَللّٰهُمَّ احْفَظْنَا مِنَ السُّوءِ وَالْفِتَنِ، وَاصْرِفْ عَنَّا الشَّيْطَانَ وَهَمْزَهُ وَنَفْخَهُ وَنَفْثَهُ",
+      "data3": "AllāHumma IḥFaẓNā Mina As‑Sū’ Wa Al‑Fitan, WaṣRif ‘Annā Ash‑ShayṭāNa Wa Hamzahū Wa Nafkhahū Wa Nafthahū",
+      "data4": "O Allah, Protect Us From Harm And Trials, And Turn Away From Us Satan And His Whispers, Arrogance, And Evil.",
     },
     {
-      "data1": "Du‘ā For Purity (الطُّهْر)",
-      "data2": "اَللّٰهُمَّ اجْعَلْ هٰذَا الْعَقْدَ بَرَكَةً وَرَحْمَةً، وَارْزُقْنَا فِيهِ الْمَوَدَّةَ وَالرَّحْمَةَ وَالطُّهْرَ",
-      "data3": "AllāHumma Ij‘Al HāDhā Al‑‘Aqda Barakatan Wa RaḥMatan, Wa Rzuqnā FīHi Al‑Mawaddata Wa Al‑RaḥMata Wa Aṭ‑ṬUhr",
-      "data4": "O Allah, Make This Contract A Source Of Blessing And Mercy, And Grant Us Affection, Compassion, And Purity Within It.",
+      "data1": "Du‘ā Seeking Mercy (الرَّحْمَة)",
+      "data2": "اَللّٰهُمَّ ارْحَمْنَا بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ، وَاجْعَلْ بَيْنَنَا مَوَدَّةً وَرَحْمَةً",
+      "data3": "AllāHumma IrḥAmnā Bi‑RaḥMatika Allatī Wasi‘At Kulla Shay’, Wa‑J‘Al Baynanā Mawaddatan Wa RaḥMatan",
+      "data4": "O Allah, Have Mercy On Us With Your Mercy Which Encompasses All Things, And Place Between Us Affection And Mercy.",
     }
 
   ];

@@ -102,7 +102,9 @@ const About = () => {
 
 
 
-        <section className="bg-[#F1F3F5] px-5 py-12 lg:py-24 relative">
+        <section className="bg-[#F1F3F5] pt-[50px] pb-[54px] px-[20px]
+  md:pt-[60px] md:pb-[64px]
+  lg:pt-[70px] lg:pb-[74px]  relative">
           <div className="max-w-[1500px] mx-auto">
 
             <div className="flex justify-center items-center flex-col">

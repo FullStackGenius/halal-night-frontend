@@ -34,7 +34,7 @@ export default function VideoSection() {
                 {/* Thumbnail video (not playing) */}
                 <img
                     src="/images/video-img.png"
-                    className="w-full relative  h-[600px] object-cover"
+                    className="w-full relative  h-[300px] md:h-[450px] lg:h-[600px] object-cover"
                     alt="thumbnail"
                 />
 

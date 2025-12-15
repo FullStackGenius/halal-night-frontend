@@ -254,15 +254,15 @@ const ContractForm = () => {
 
                                 <div className="border-5 border-[#C8AD79] w-full p-[10px]">
 
-                                    <div className="border-5 border-[#C8AD79] w-full py-[32px] px-[25px]">
+                                    <div className="border-5 border-[#C8AD79] w-full  py-[15px] px-[15px] md:py-[32px] md:px-[25px]">
 
-                                        <div className="max-w-[1360px] border border-[#C8AD79] p-[20px] lg:p-[40px]">
+                                        <div className="max-w-[1360px] border-0 p-0 md:border md:border-[#C8AD79] md:p-[20px] lg:p-[40px]">
 
 
                                             <h3 className="text-center text-[#89693A] font-[poppins-regular] text-[24px] leading-[32px] sm:text-[30px] sm:leading-[40px]">
                                                 بسم الله الرحمن الرحيم
                                             </h3>
-                                            <p className="text-center text-[#89693A] font-[poppins-medium] text-[24px] leading-[32px] sm:text-[30px] sm:leading-[40px] pt-5">
+                                            <p className="text-center text-[#89693A] font-[poppins-medium] text-[16px] leading-[24px] sm:text-[30px] sm:leading-[40px] pt-5">
                                                 IN THE NAME OF ALLAH, THE BENEFICENT, THE MERCIFUL
                                             </p>
                                             <div className="w-full max-w-[200px] mx-auto py-[20px]">
@@ -271,10 +271,10 @@ const ContractForm = () => {
                                             </div>
 
 
-                                            <h1 className="text-center text-[#89693A] font-[poppins-bold] tracking-[2px] text-[32px] leading-[42px] lg:text-[40px] lg:leading-[50px] sm:tracking-[1px]">
+                                            <h1 className="text-center text-[#89693A] font-[poppins-bold] tracking-[2px] text-[22px] leading-[32px] lg:text-[40px] lg:leading-[50px] sm:tracking-[1px]">
                                                 MUT'AH MARRIAGE CONTRACT
                                             </h1>
-                                            <p className="text-center text-[#89693A] font-[poppins-medium] text-[20px] leading-[30px] tracking-[2px] sm:text-[24px] sm:leading-[36px] sm:tracking-[1px] pt-2">
+                                            <p className="text-center text-[#89693A] font-[poppins-medium] text-[16px] leading-[24px] tracking-[2px] sm:text-[24px] sm:leading-[36px] sm:tracking-[1px] pt-2">
                                                 (TEMPORARY MARRIAGE AGREEMENT)
                                             </p>
 
@@ -284,22 +284,22 @@ const ContractForm = () => {
 
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[20px] md:mb-[28px] lg:mb-[32px]">
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Name Of Male*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Name Of Male*</label>
                                                         <input type="text"
                                                             name="maleName"
                                                             ref={inputRefs.maleName}
                                                             onChange={handleInput}
-                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Full Legal Name Of Male" />
+                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Full Legal Name Of Male" />
                                                         {errors.maleName && <p className="text-red-600 text-sm">{errors.maleName}</p>}
                                                     </div>
 
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Name Of Female*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Name Of Female*</label>
                                                         <input type="text"
                                                             name="femaleName"
                                                             ref={inputRefs.femaleName}
                                                             onChange={handleInput}
-                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Full Legal Name Of Female" />
+                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Full Legal Name Of Female" />
                                                         {errors.femaleName && <p className="text-red-600 text-sm">{errors.femaleName}</p>}
                                                     </div>
                                                 </div>
@@ -307,22 +307,22 @@ const ContractForm = () => {
 
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[20px] md:mb-[28px] lg:mb-[32px]">
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Mehr / Dowry Amount*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Mehr / Dowry Amount*</label>
                                                         <input type="text"
                                                             name="mehr"
                                                             ref={inputRefs.mehr}
                                                             onChange={handleInput}
-                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="E.g., 500 CAD, Gold, etc." />
+                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="E.g., 500 CAD, Gold, etc." />
                                                         {errors.mehr && <p className="text-red-600 text-sm">{errors.mehr}</p>}
                                                     </div>
 
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Agreed Period of Marriage*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Agreed Period of Marriage*</label>
                                                         <input type="text"
                                                             name="agreedPeriodMarriage"
                                                             onChange={handleInput}
                                                             ref={inputRefs.agreedPeriodMarriage}
-                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="E.g., 1 Month, 6 Months, 1 Year" />
+                                                            className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="E.g., 1 Month, 6 Months, 1 Year" />
                                                         {errors.agreedPeriodMarriage && <p className="text-red-600 text-sm">{errors.agreedPeriodMarriage}</p>}
                                                     </div>
                                                 </div>
@@ -332,19 +332,19 @@ const ContractForm = () => {
                                                         <h3 className="text-center text-[#89693A] font-[poppins-semi-bold] font-semibold text-[24px] leading-[32px] sm:text-[30px] sm:leading-[40px]">
                                                             RECITAL TEXT
                                                         </h3>
-                                                        <p className="text-center text-[#4C3D2C] font-[poppins-semibold] text-[24px] leading-[32px] sm:text-[30px] sm:leading-[40px] pt-2">
+                                                        <p className="text-center text-[#4C3D2C] font-[poppins-semibold] text-[22px] leading-[30px] sm:text-[30px] sm:leading-[40px] pt-2">
                                                             زَوَّجْتُكَ نَفْسِي فِي الْمُدَّةِ الْمَعْلُومَةِ عَلَى الْمَهْرِ الْمَعْلُومِ
                                                         </p>
-                                                        <p className="italic text-center text-[#4C3D2C] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[36px] pt-3">
+                                                        <p className="italic text-center text-[#4C3D2C] font-[poppins-regular] text-[14px] leading-[22px] sm:text-[18px] sm:leading-[36px] pt-3">
                                                             “Zawwajtuka nafsi fī al-muddat il-ma‘lūmah ‘alā al-mahr il-ma‘lūm.”
                                                         </p>
-                                                        <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[36px]">“I marry myself to you for the agreed duration and the agreed dowry.”</p>
-                                                        <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[16px] leading-[28px] sm:text-[18px] sm:leading-[36px]">The male responds: <span className="text-[#4C3D2C] font-bold font-[poppins-bold]">“Qabiltu”</span> – “I accept.”</p>
+                                                        <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[14px] leading-[22px] sm:text-[18px] sm:leading-[36px]">“I marry myself to you for the agreed duration and the agreed dowry.”</p>
+                                                        <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[14px] leading-[22px] sm:text-[18px] sm:leading-[36px]">The male responds: <span className="text-[#4C3D2C] font-bold font-[poppins-bold]">“Qabiltu”</span> – “I accept.”</p>
                                                     </div>
                                                 </div>
                                                 <div className="mb-[20px] md:mb-[28px] lg:mb-[32px]">
-                                                    <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Additional Conditions (Optional)</label>
-                                                    <textarea className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[115px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Any Mutually Agreed Conditions (e.g., Housing, Rights, Support)"
+                                                    <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Additional Conditions (Optional)</label>
+                                                    <textarea className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[80px] md:h-[115px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Enter Any Mutually Agreed Conditions (e.g., Housing, Rights, Support)"
                                                         name="conditions"
                                                         onChange={handleInput}></textarea>
                                                 </div>
@@ -385,7 +385,7 @@ const ContractForm = () => {
                                                                     <button
                                                                         type="button"
                                                                         onClick={() => clearSig(ref, key)}
-                                                                        className="text-[#89693A] font-[poppins-semi-bold] text-[16px] underline"
+                                                                        className="text-[#89693A] font-[poppins-semi-bold] text-[16px] underline cursor-pointer"
                                                                     >
                                                                         Clear
                                                                     </button>
@@ -400,35 +400,35 @@ const ContractForm = () => {
                                                 </div>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[20px] md:mb-[28px] lg:mb-[32px]">
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Date*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Date*</label>
                                                         <input
                                                             name="marriageDate"
                                                             ref={inputRefs.marriageDate}
                                                             type="date"
-                                                            onChange={handleInput} className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="DD/MM/YYYY" />
+                                                            onChange={handleInput} className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="DD/MM/YYYY" />
                                                         {errors.marriageDate && <p className="text-red-600 text-sm">{errors.marriageDate}</p>}
                                                     </div>
                                                     <div>
-                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Location*</label>
+                                                        <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Location*</label>
                                                         <input
                                                             name="location"
                                                             ref={inputRefs.location}
                                                             onChange={handleInput}
-                                                            type="text" className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="City/Country" />
+                                                            type="text" className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="City/Country" />
                                                         {errors.location && <p className="text-red-600 text-sm">{errors.location}</p>}
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <label className="text-sm text-[#89693A] font-[poppins-bold] text-[17px] lg:text-[20px] leading-[20px] mb-[10px] flex">Witnesses (Recommended, Optional)</label>
+                                                    <label className="text-sm text-[#89693A] font-[poppins-bold] text-[16px] lg:text-[20px] leading-[20px] mb-[10px] flex">Witnesses (Recommended, Optional)</label>
                                                     <input type="text"
                                                         name="witness1Name"
                                                         onChange={handleInput}
-                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] mb-[20px] md:mb-[25px] lg:mb-[30px] focus:outline-none focus:ring-0" placeholder="Name Of Witness 1 (Optional)" />
+                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] mb-[20px] md:mb-[25px] lg:mb-[30px] focus:outline-none focus:ring-0" placeholder="Name Of Witness 1 (Optional)" />
                                                     {errors.witness1Name && <p className="text-red-600 text-sm">{errors.witness1Name}</p>}
                                                     <input type="text"
                                                         name="witness2Name"
                                                         onChange={handleInput}
-                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[60px] p-[17px] placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Name Of Witness 2 (Optional)" />
+                                                        className="font-[poppins-regular] w-full border border-[#C8AD79] rounded-[10px] bg-[#FFFDF7] h-[47px] md:h-[60px] p-[17px] placeholder:text-[12px] sm:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:leading-[18px] md:placeholder:leading-[20px] placeholder:text-[#9D9D9D] focus:outline-none focus:ring-0" placeholder="Name Of Witness 2 (Optional)" />
                                                     {errors.witness2Name && <p className="text-red-600 text-sm">{errors.witness2Name}</p>}
                                                 </div>
                                                 <p className="text-center text-[#4C3D2C] font-[poppins-regular] text-[16px] leading-[20px] sm:text-[16px] sm:leading-[20px] pt-3">

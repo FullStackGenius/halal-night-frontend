@@ -18,12 +18,14 @@ const Footer = () => {
     { label: "Contact", link: "/contact" },
   ];
   return (
-    <footer className="bg-[#F1F3F5] pt-14  px-5 lg:pt-20 pb-5">
+    <footer className="bg-[#F1F3F5] px-5 pt-[34px] pb-[30px]">
       <div className="max-w-[1500px] mx-auto">
         <div className="flex items-center justify-between gap-5 flex-col md:flex-row">
           <div className="flex items-center justify-between w-[380px] max-w-full gap-5 flex-col md:flex-row">
-            <div className="logo_footer w-[196px] h-[196px] min-w-[196px]">
+            <div className="logo_footer  w-[150px] h-[150px] min-w-[150px] md:w-[196px] md:h-[196px] md:min-w-[196px]">
+<a href="/" data-discover="true">
               <img className="w-full" src="/images/logo.svg" />
+</a>
             </div>
             <div className="flex flex-row gap-10 flex-wrap justify-center md:justify-start md:flex-col md:gap-0.5">
               {footerLinks.map((item, index) => (
