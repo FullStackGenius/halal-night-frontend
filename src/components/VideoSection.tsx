@@ -2,21 +2,21 @@ import { useRef, useState } from "react";
 
 export default function VideoSection() {
     const popupVideoRef = useRef<HTMLVideoElement>(null);
-    const [showPlayBtn, setShowPlayBtn] = useState(true);
+    // const [showPlayBtn, setShowPlayBtn] = useState(true);
     const [showPopup, setShowPopup] = useState(false);
 
-    const handlePlay = () => {
-        setShowPopup(true);
-        setShowPlayBtn(false);
+    // const handlePlay = () => {
+    //     setShowPopup(true);
+    //     setShowPlayBtn(false);
 
-        // autoplay after modal renders
-        setTimeout(() => {
-            if (popupVideoRef.current) {
-                popupVideoRef.current.currentTime = 0;
-                popupVideoRef.current.play();
-            }
-        }, 200);
-    };
+    //     // autoplay after modal renders
+    //     setTimeout(() => {
+    //         if (popupVideoRef.current) {
+    //             popupVideoRef.current.currentTime = 0;
+    //             popupVideoRef.current.play();
+    //         }
+    //     }, 200);
+    // };
 
     const closePopup = () => {
         if (popupVideoRef.current) {
@@ -24,7 +24,7 @@ export default function VideoSection() {
             popupVideoRef.current.currentTime = 0;
         }
         setShowPopup(false);
-        setShowPlayBtn(true);
+        // setShowPlayBtn(true);
     };
 
     return (
@@ -38,7 +38,7 @@ export default function VideoSection() {
                     alt="thumbnail"
                 />
 
-                {showPlayBtn && (
+                {/* {showPlayBtn && (
                     <button
                         onClick={handlePlay}
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 waves cursor-pointer"
@@ -49,7 +49,7 @@ export default function VideoSection() {
                             </svg>
                         </div>
                     </button>
-                )}
+                )} */}
 
             </div>
 
